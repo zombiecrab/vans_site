@@ -1,0 +1,109 @@
+body { 
+    text-align:center; 
+} 
+
+.frame {
+    text-align: center;
+    width: 1000px;
+    margin:0 auto;
+}
+.content {
+    height: 800px;
+    vertical-align: top;
+}
+.title {
+     width: 30%;
+     height: 16%;
+     background-color:#003366;  
+     visibility: visible;
+}
+.topspacer {
+     height: 45px;
+}
+.topContentSpacer {
+    height: 3em;
+}
+.navLeftSpacer {
+    width: 2%;
+}
+td.vm {
+    width: 80%
+}
+.vm {
+    display: block;
+    background-image: url('../images/vm.png');
+    background-repeat:no-repeat;
+    width: 250px;
+    height: 30px;
+}
+
+.tilerow {
+    height: 10.5em;
+}
+.tile {
+    height: 9.5em;
+    width:9.5em;
+    display: inline-block;
+    margin: 0.5em;
+}
+
+.worksRollover {
+    display: block;
+    width: 90px;
+    height:27px;
+    background-repeat:no-repeat;
+    background-image: url('../images/work-button.png');
+}
+
+.worksRollover:hover {
+    background-position: -0px -27px;
+}
+
+.navWorks {
+    height: 27px;
+    width: 90px;
+    vertical-align: center;
+    text-align: center;
+}
+
+.bioRollover {
+    display: block;
+    width: 110px;
+    height:27px;
+    background-repeat:no-repeat;
+    background-image: url('../images/ex-bio.png');
+}
+
+.bioRollover:hover {
+    background-position: -0px -27px;
+}
+
+.navBio {
+    height: 27px;
+    width: 110px;
+    vertical-align: center;
+    text-align: center;
+}
+
+
+.contactRollover {
+    display: block;
+    width: 84px;
+    height:27px;
+    background-repeat:no-repeat;
+    background-image: url('../images/contact-button.png');
+}
+
+.contactRollover:hover {
+    background-position: -0px -27px;
+}
+
+.navContact {
+    height: 27px;
+    width: 84px;
+    vertical-align: center;
+    text-align: center;
+}
+.navRightSpacer {
+    width:2%;
+}

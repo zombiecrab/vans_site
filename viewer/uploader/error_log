@@ -1,0 +1,69 @@
+[09-Feb-2013 14:47:28 UTC] PHP Deprecated:  Function ereg() is deprecated in /home/alex/public_html/alexdev/gall/uploader/class.upload.php on line 1751
+[09-Feb-2013 14:47:28 UTC] PHP Deprecated:  Function ereg_replace() is deprecated in /home/alex/public_html/alexdev/gall/uploader/class.upload.php on line 1917
+[09-Feb-2013 14:47:28 UTC] PHP Deprecated:  Function ereg_replace() is deprecated in /home/alex/public_html/alexdev/gall/uploader/class.upload.php on line 1917
+[09-Feb-2013 14:47:54 UTC] PHP Deprecated:  Function ereg() is deprecated in /home/alex/public_html/alexdev/gall/uploader/class.upload.php on line 1751
+[09-Feb-2013 14:47:54 UTC] PHP Deprecated:  Function ereg_replace() is deprecated in /home/alex/public_html/alexdev/gall/uploader/class.upload.php on line 1917
+[09-Feb-2013 14:47:54 UTC] PHP Deprecated:  Function ereg_replace() is deprecated in /home/alex/public_html/alexdev/gall/uploader/class.upload.php on line 1917
+[09-Feb-2013 14:48:24 UTC] PHP Deprecated:  Function ereg() is deprecated in /home/alex/public_html/alexdev/gall/uploader/class.upload.php on line 1751
+[09-Feb-2013 14:48:24 UTC] PHP Deprecated:  Function ereg_replace() is deprecated in /home/alex/public_html/alexdev/gall/uploader/class.upload.php on line 1917
+[09-Feb-2013 14:48:24 UTC] PHP Deprecated:  Function ereg_replace() is deprecated in /home/alex/public_html/alexdev/gall/uploader/class.upload.php on line 1917
+[26-Feb-2013 19:06:48 UTC] PHP Deprecated:  Function ereg() is deprecated in /home/alex/public_html/alexdev/gall/uploader/class.upload.php on line 1751
+[26-Feb-2013 19:06:48 UTC] PHP Deprecated:  Function ereg_replace() is deprecated in /home/alex/public_html/alexdev/gall/uploader/class.upload.php on line 1917
+[26-Feb-2013 19:06:48 UTC] PHP Deprecated:  Function ereg_replace() is deprecated in /home/alex/public_html/alexdev/gall/uploader/class.upload.php on line 1917
+[26-Feb-2013 19:08:42 UTC] PHP Deprecated:  Function ereg() is deprecated in /home/alex/public_html/alexdev/gall/uploader/class.upload.php on line 1751
+[02-Jun-2013 00:31:15 UTC] PHP Parse error:  syntax error, unexpected $end in /home/alex/public_html/alexdev/viewer/uploader/batchresize.php on line 45
+[02-Jun-2013 00:31:41 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1694
+[02-Jun-2013 00:31:41 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1697
+[02-Jun-2013 00:31:41 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1694
+[02-Jun-2013 00:31:41 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1697
+[02-Jun-2013 00:31:41 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1694
+[02-Jun-2013 00:31:41 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1697
+[02-Jun-2013 00:31:41 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1694
+[02-Jun-2013 00:31:41 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1697
+[02-Jun-2013 00:31:41 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1694
+[02-Jun-2013 00:31:41 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1697
+[02-Jun-2013 00:42:39 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/alex/public_html/alexdev/viewer/uploader/batchresize.php on line 40
+[02-Jun-2013 00:44:07 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1694
+[02-Jun-2013 00:44:07 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1697
+[02-Jun-2013 00:44:07 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1694
+[02-Jun-2013 00:44:07 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1697
+[02-Jun-2013 00:44:07 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1694
+[02-Jun-2013 00:44:07 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1697
+[02-Jun-2013 00:44:07 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1694
+[02-Jun-2013 00:44:07 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1697
+[02-Jun-2013 00:44:08 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1694
+[02-Jun-2013 00:44:08 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1697
+[02-Jun-2013 00:49:51 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1694
+[02-Jun-2013 00:49:51 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1697
+[02-Jun-2013 00:49:51 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1694
+[02-Jun-2013 00:49:51 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1697
+[02-Jun-2013 00:49:51 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1694
+[02-Jun-2013 00:49:51 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1697
+[02-Jun-2013 00:49:51 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1694
+[02-Jun-2013 00:49:51 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1697
+[02-Jun-2013 00:49:51 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1694
+[02-Jun-2013 00:49:51 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1697
+[02-Jun-2013 11:37:08 UTC] PHP Parse error:  syntax error, unexpected T_ECHO in /home/alex/public_html/alexdev/viewer/uploader/batchresize.php on line 32
+[02-Jun-2013 11:37:37 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/alex/public_html/alexdev/viewer/uploader/batchresize.php on line 31
+[02-Jun-2013 11:40:03 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/alex/public_html/alexdev/viewer/uploader/batchresize.php on line 46
+[02-Jun-2013 11:40:03 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1694
+[02-Jun-2013 11:40:03 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1697
+[02-Jun-2013 11:40:03 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1694
+[02-Jun-2013 11:40:03 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1697
+[02-Jun-2013 11:40:03 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1694
+[02-Jun-2013 11:40:03 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1697
+[02-Jun-2013 11:40:03 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1694
+[02-Jun-2013 11:40:03 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1697
+[02-Jun-2013 11:40:03 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1694
+[02-Jun-2013 11:40:03 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1697
+[02-Jun-2013 11:45:30 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/alex/public_html/alexdev/viewer/uploader/batchresize.php on line 46
+[02-Jun-2013 11:45:31 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1694
+[02-Jun-2013 11:45:31 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1697
+[02-Jun-2013 11:45:31 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1694
+[02-Jun-2013 11:45:31 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1697
+[02-Jun-2013 11:45:31 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1694
+[02-Jun-2013 11:45:31 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1697
+[02-Jun-2013 11:45:31 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1694
+[02-Jun-2013 11:45:31 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1697
+[02-Jun-2013 11:45:31 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1694
+[02-Jun-2013 11:45:31 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /home/alex/public_html/alexdev/viewer/uploader/class.upload.php on line 1697
