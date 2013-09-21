@@ -107,3 +107,8 @@ td.vm {
 .navRightSpacer {
     width:2%;
 }
+.imgCage {
+	max-height:100%; 
+	max-width:100%;
+}
+}

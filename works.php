@@ -26,7 +26,7 @@ include 'phplib/config.inc.php';
             }
         
             $(window).load(function() {
-                jQuery('.nailthumb-container').nailthumb({method:'crop',fitDirection:'top left'});                document.getElementById("tile").style.display="inline";
+                jQuery('.nailthumb-container').nailthumb({method:'crop',fitDirection:'top left'});
             });
         </script>
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
@@ -64,7 +64,7 @@ include 'phplib/config.inc.php';
                     for ($i=0;$i<$rows;$i++){
                         print("<div class=\"tilerow\">");
                             for ($j=0;$j<$cols;$j++){                            	if(isset($imageLocations[++$imageIndex])){
-                                	printf("<div class=\"nailthumb-container tile\"><a href=\"viewer/index.php?index=%s\" ><img src=\"%s\" /> /></div>", $imageIndex,$imageLocations[$imageIndex]);																	}
+                                	printf("<div class=\"nailthumb-container tile\"><a href=\"viewer/index.php?index=%s\" ><img class=\"imgCage\" src=\"%s\" /> /></div>", $imageIndex,$imageLocations[$imageIndex]);																	}
                             }
                             
                         print("</div>");
