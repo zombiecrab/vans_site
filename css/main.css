@@ -44,6 +44,7 @@ td.vm {
     height: 9.5em;
     width:9.5em;
     display: inline-block;
+    visibility:hidden;
     margin: 0.5em;
 }
 

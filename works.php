@@ -26,7 +26,7 @@ include 'phplib/config.inc.php';
             }
         
             $(window).load(function() {
-                jQuery('.nailthumb-container').nailthumb({method:'crop',fitDirection:'top left'});
+                jQuery('.nailthumb-container').nailthumb({method:'crop',fitDirection:'top left', onFinish:function(){$(".tile").css("visibility", "visible");}});
             });
         </script>
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
