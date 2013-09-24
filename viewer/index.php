@@ -50,32 +50,47 @@
 require_once "config.php";
 require_once "getfolders.php";
 ?>
-
-<script type="text/javascript" src="js/mootools.v1.11.js"></script>
-<script type="text/javascript"><?php getImages($gallerypath, 'tempgallery'); ?>
-		var firstimagewidth = currentwidth;
-		var firstimageheight = currentheight;
-		var transspeed = <?php echo $transitionspeed; ?>;
-		var fadespeed = <?php echo $fadespeed; ?>;
-
-
-
-		function scrollR() {
-			checkbutton(addposition('plus'));
-			movethumbs('minus');
-		}
-		
-		function scrollL() {
-			checkbutton(addposition('minus'));
-			movethumbs('plus');
-		}
-</script>
-
+<script type="text/javascript" src="../js/jquery-1.9.0.min.js"></script>
 <script type="text/javascript" src="js/e2photo.js"></script>
 <script type="text/javascript" src="js/styleswitcher.js"></script>
-
-
 <script type="text/javascript" src="js/e2photo2.js"></script>
+<script type="text/javascript" src="js/mootools.v1.11.js"></script>
+<script type="text/javascript"><?php getImages($gallerypath, 'tempgallery'); ?>
+	var firstimagewidth = currentwidth;
+	var firstimageheight = currentheight;
+	var transspeed =  
+ <?php echo $transitionspeed; ?>
+			;
+			var fadespeed =  
+ <?php echo $fadespeed; ?>
+			;
+
+			$(window).load(function() {
+				var index = getURLParameter('index');
+				window.alert("step 1");
+
+				initGallery(tempgallery, tempgallery.length, tempgallery[0][8], tempgallery[0][1], tempgallery[0][2], 0);
+				if (index == "null") {
+					getstarted(tempgallery[0][1], tempgallery[0][2], 'imgloader', 0, 0, 0);
+				} else {
+					getstarted(tempgallery[index][1], tempgallery[index][2], 'imgloader', index, index, index);
+				}
+
+				setActiveStyleSheet('none');
+			});
+
+			function scrollR() {
+				checkbutton(addposition('plus'));
+				movethumbs('minus');
+			}
+
+			function scrollL() {
+				checkbutton(addposition('minus'));
+				movethumbs('plus');
+			}
+</script>
+
+
 
 </head>
 
