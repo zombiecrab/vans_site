@@ -4,8 +4,8 @@ function initGallery(tempgallery, count, first_id, startwidth, startheight) {
 	imggallery = tempgallery;
 	if (preloadimg == "yes") {
 		for ( x = 0; x < imggallery.length; x++) {
-			var myimage = new Image();
-			myimage.src = imggallery[x][0];
+			var myimage = new Image()
+			myimage.src = imggallery[x][0]
 		}
 	}
 	thumbnailnum = imggallery.length;
@@ -22,7 +22,7 @@ function initGallery(tempgallery, count, first_id, startwidth, startheight) {
 		var setloadersize = new Fx.Styles('main_image_wrapper', {
 			duration : transspeed,
 			onComplete : function() {
-				loadfirstimage(currentwidth, currentheight);
+				loadfirstimage(currentwidth, currentheight)
 			}
 		});
 		setloadersize.start({
@@ -34,7 +34,18 @@ function initGallery(tempgallery, count, first_id, startwidth, startheight) {
 	ready = 1;
 }
 
+window.onload = function() {
+	var index = getURLParameter('index');
 
+	initGallery(tempgallery, tempgallery.length, tempgallery[0][8], tempgallery[0][1], tempgallery[0][2], 0);
+	if (index == "null"){
+		getstarted(tempgallery[0][1], tempgallery[0][2], 'imgloader', 0, 0, 0);
+	} else {
+		getstarted(tempgallery[index][1], tempgallery[index][2], 'imgloader', index, index, index);
+	}
+	
+	setActiveStyleSheet('none');
+}
 function getURLParameter(name) {
 	return decodeURI((RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]);
 }
@@ -90,7 +101,7 @@ function getstarted(width, height, loadarea, imgindex, img_id, current_imgid) {
 			duration : transspeed
 		});
 		fademe.start(1, 0);
-		fadeout = 0;
+		fadeout = 0
 	}
 }
 
@@ -123,39 +134,26 @@ function loadfirstimage(currentwidth, currentheight) {
 function nextimage(current_imgid) {
 
 	newimgid = Number(current_imgid) + 1;
-	newwidth = imggallery[newimgid][1];
-	newheight = imggallery[newimgid][2];
-	newimgindex = imggallery[newimgid][8];
-	newimgid = imggallery[newimgid][8];
-	cwidth = imggallery[current_imgid][1];
-	cheight = imggallery[current_imgid][2];
+	newwidth = imggallery[newimgid][1]
+	newheight = imggallery[newimgid][2]
+	newimgindex = imggallery[newimgid][8]
+	newimgid = imggallery[newimgid][8]
+	cwidth = imggallery[current_imgid][1]
+	cheight = imggallery[current_imgid][2]
 	checknext(newimgid);
 	nextorprev = 1;
-	getstarted(Number(newwidth), Number(newheight), 'imgloader', Number(newimgindex), Number(newimgid), Number(current_imgid), Number(cwidth), Number(cheight));
+	getstarted(Number(newwidth), Number(newheight), 'imgloader', Number(newimgindex), Number(newimgid), Number(current_imgid), Number(cwidth), Number(cheight))
 }
 
 function previmage(current_imgid) {
 	newimgid = Number(current_imgid) - 1;
-	newwidth = imggallery[newimgid][1];
-	newheight = imggallery[newimgid][2];
-	newimgindex = imggallery[newimgid][8];
-	newimgid = imggallery[newimgid][8];
-	cwidth = imggallery[current_imgid][1];
-	cheight = imggallery[current_imgid][2];
+	newwidth = imggallery[newimgid][1]
+	newheight = imggallery[newimgid][2]
+	newimgindex = imggallery[newimgid][8]
+	newimgid = imggallery[newimgid][8]
+	cwidth = imggallery[current_imgid][1]
+	cheight = imggallery[current_imgid][2]
 	checknext(newimgid);
 	nextorprev = 1;
-	getstarted(Number(newwidth), Number(newheight), 'imgloader', Number(newimgindex), Number(newimgid), Number(current_imgid), Number(cwidth), Number(cheight));
+	getstarted(Number(newwidth), Number(newheight), 'imgloader', Number(newimgindex), Number(newimgid), Number(current_imgid), Number(cwidth), Number(cheight))
 }
-$(window).load(function() {
-	var index = getURLParameter('index');
-	window.alert("step 1");
-
-	initGallery(tempgallery, tempgallery.length, tempgallery[0][8], tempgallery[0][1], tempgallery[0][2], 0);
-	if (index == "null"){
-		getstarted(tempgallery[0][1], tempgallery[0][2], 'imgloader', 0, 0, 0);
-	} else {
-		getstarted(tempgallery[index][1], tempgallery[index][2], 'imgloader', index, index, index);
-	}
-	
-	setActiveStyleSheet('none');
-})

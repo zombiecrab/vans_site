@@ -67,26 +67,8 @@ body{background:url(/new/images/mainbg.png);}
 	text-align: left;
 	left:0;
 }
-#back{
-	position:absolute;
-	top:0;
-	left:0;
-	visibility:hidden;
-	z-index:1001;
-	width:32px;
-	height:115px;
-	background:url(../rsrc/left_more.gif) no-repeat;
-}
-
-#more{position:absolute;
-	top:0;
-	left:568px;
-	float:right;
-	z-index:1001;
-	width:32px;
-	height:115px;
-	background:url(../rsrc/right_more.gif) no-repeat;
-}
+#back{position:absolute;top:0;left:0;visibility:hidden;z-index:1001;}
+#more{position:absolute;top:0;left:568px;float:right;z-index:1001;}
 .morelink:hover{font-size:11px;color:#FFF;text-decoration:underline;}
 #thumbgall{position:absolute;left:0;top:0;white-space:nowrap;z-index:1000;}
 #widthbox{position:relative;display:inline;left:0;top:0;padding:1px;}
@@ -95,10 +77,10 @@ body{background:url(/new/images/mainbg.png);}
 #iptc_info{position:absolute;bottom:0;left:0;height:auto;width:100%;background-color:#000;color:#CCC;font-size:10px;line-height:140%;text-align:left;filter:alpha(opacity=0);-moz-opacity:0;opacity:0;}
 .iptc_left{float:left;text-align:right;width:18%;color:#FFF;padding:0 0 0 2%;}
 .iptc_right{float:right;text-align:left;width:79%;}
-#rightmore li a{background:url(../rsrc/right_more.gif) no-repeat;display:block;color:#fff;text-decoration:none;width:100%;padding:0;}
-#rightmore li a:hover{background:url(../rsrc/right_more_over.gif) no-repeat;color:#fff;height:115px;}
-#leftmore li a{background:url(../rsrc/left_more.gif) no-repeat;display:block;color:#fff;text-decoration:none;width:100%;padding:0;}
-#leftmore li a:hover{background:url(../rsrc/left_more_over.gif) no-repeat;color:#fff;height:115px;}
+#rightmore li a{background:url(../designs/e2/right_more.gif) no-repeat;display:block;color:#fff;text-decoration:none;width:100%;padding:0;}
+#rightmore li a:hover{background:url(../designs/e2/right_more_over.gif) no-repeat;color:#fff;height:115px;}
+#leftmore li a{background:url(../designs/e2/left_more.gif) no-repeat;display:block;color:#fff;text-decoration:none;width:100%;padding:0;}
+#leftmore li a:hover{background:url(../designs/e2/left_more_over.gif) no-repeat;color:#fff;height:115px;}
 .spacing{padding:1px;}
 .morelink:link,.morelink:visited{font-size:11px;color:#FFF;text-decoration:none;}
 #rightmore,#leftmore{color:#333;height:115px;width:32px;padding:0;}

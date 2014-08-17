@@ -1913,9 +1913,8 @@ class upload {
                 $this->log .= '- ' . _("file name body add") . ' : ' . $this->file_name_body_add . '<br />';
             }
             if ($this->file_safe_name) { // formats the name
-                //$this->file_dst_name_body = str_replace(array(' ', '-'), array('_','_'), $this->file_dst_name_body) ;
-                //$this->file_dst_name_body = ereg_replace('[^A-Za-z0-9_]', '', $this->file_dst_name_body)
-                 ;
+                $this->file_dst_name_body = str_replace(array(' ', '-'), array('_','_'), $this->file_dst_name_body) ;
+                //$this->file_dst_name_body = ereg_replace('[^A-Za-z0-9_]', '', $this->file_dst_name_body) ;
                 $this->log .= '- ' . _("file name safe format") . '<br />';
             }
 

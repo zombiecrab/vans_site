@@ -1,4 +1,4 @@
-<?php
+<?php 
 // +----------------------------------------------------------------------------+
 // | (E)2 Photo Gallery                                                         |
 // +----------------------------------------------------------------------------+
@@ -21,7 +21,7 @@
 // | in all copies or substantial portions of the Software.				  |
 // | 													  |
 // | THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS 	  |
-// | OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,|
+// | OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,| 
 // | FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL 	  |
 // | THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR 	  |
 // | OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, 	  |
@@ -47,50 +47,26 @@
 
 <link rel="alternate stylesheet" type="text/css" href="css/e2.css" title="none">
 <?php
-require_once "config.php";
-require_once "getfolders.php";
+	require_once "config.php";
+	require_once "getfolders.php";
 ?>
-<script type="text/javascript" src="../js/jquery-1.9.0.min.js"></script>
-<script type="text/javascript" src="js/e2photo.js"></script>
-<script type="text/javascript" src="js/styleswitcher.js"></script>
-<script type="text/javascript" src="js/e2photo2.js"></script>
+
 <script type="text/javascript" src="js/mootools.v1.11.js"></script>
-<script type="text/javascript"><?php getImages($gallerypath, 'tempgallery'); ?>
-	var firstimagewidth = currentwidth;
-	var firstimageheight = currentheight;
-	var transspeed =  
- <?php echo $transitionspeed; ?>
-			;
-			var fadespeed =  
- <?php echo $fadespeed; ?>
-			;
-
-			$(window).load(function() {
-				var index = getURLParameter('index');
-				window.alert("step 1");
-
-				initGallery(tempgallery, tempgallery.length, tempgallery[0][8], tempgallery[0][1], tempgallery[0][2], 0);
-				if (index == "null") {
-					getstarted(tempgallery[0][1], tempgallery[0][2], 'imgloader', 0, 0, 0);
-				} else {
-					getstarted(tempgallery[index][1], tempgallery[index][2], 'imgloader', index, index, index);
-				}
-
-				setActiveStyleSheet('none');
-			});
-
-			function scrollR() {
-				checkbutton(addposition('plus'));
-				movethumbs('minus');
-			}
-
-			function scrollL() {
-				checkbutton(addposition('minus'));
-				movethumbs('plus');
-			}
+<script type="text/javascript">
+var transspeed=<?php echo $transitionspeed;?>;
+var fadespeed=<?php echo $fadespeed;?>;
 </script>
 
+<script type="text/javascript" src="js/e2photo.js"></script>
+<script type="text/javascript" src="js/styleswitcher.js"></script>
 
+<script type="text/JavaScript">	
+<?php getImages($gallerypath, 'tempgallery'); ?>
+var firstimagewidth=currentwidth;
+var firstimageheight=currentheight;
+
+</script>
+<script type="text/javascript" src="js/e2photo2.js"></script>
 
 </head>
 
@@ -112,11 +88,14 @@ require_once "getfolders.php";
 			
 			<div id="iptc_btn"></a></div>
 			  <?php getfirstimage($gallerypath, "tempgallery"); ?>
+			 <div id="pn_overlay">
+				<a href='javascript:previmage(current_imgid);' id='prev' class=".toolTip" tooltitle="Previous Image" ></a>
+				<a href='javascript:nextimage(current_imgid);' id='next' tooltitle="Next Image"></a>			 </div>
 		  </div>
 		  <div align="center" class="spacing"> </div>
 		  <!--End Main Image-->
 		  <div id="thumbdisplay">
-			  <div align="center" id="photocount"> <script type="text/javascript">document.write("1 of " + tempgallery.length + " Photos");</script> </div>
+			  <div align="center" id="photocount"> <script type="text/javascript">document.write("1 of "+tempgallery.length+" Photos");</script> </div>
 			  <div class="clear"></div>
 		  </div>
 		  <div align="center" class="spacing"> </div>
@@ -129,10 +108,11 @@ require_once "getfolders.php";
 				</div>
 			  </div>
 			</div>
-			<div id="back" onclick="scrollL()">
+			<div id="back">
+			  <script type="text/javascript">if(thumbnailnum>maxthumbvisible){document.write("<div id='leftmore'><ul><li><a href=\"javascript:checkbutton(addposition('minus'));movethumbs('plus');\"><img src='rsrc/buttonblank.gif' width='15' height='115' border='0' /></a></li></ul></div>");}</script>
 			</div>
-			<div id="more" onclick="scrollR()">
-				<div id='rightmore'></div>
+			<div id="more">
+			  <script type="text/javascript">if(thumbnailnum>maxthumbvisible){document.write("<div id='rightmore'><ul><li><a href=\"javascript:checkbutton(addposition('plus'));movethumbs('minus');\"><img src='rsrc/buttonblank.gif' width='15' height='115' border='0' /></a></li></ul></div>");}</script>
 			</div>
 			</div>
 		  </div>

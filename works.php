@@ -12,6 +12,7 @@ include 'phplib/config.inc.php';
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
         <script type="text/javascript" src="js/jquery.nailthumb.js"></script>
+        <script type="text/javascript" src="js/jquery.imgpreload.js"></script>
         <script type="text/javascript">
             function nextPage()
             {
@@ -26,7 +27,18 @@ include 'phplib/config.inc.php';
             }
         
             jQuery(document).ready(function() {
-                jQuery('.nailthumb-container').nailthumb({method:'crop',fitDirection:'top left'});
+                jQuery('.nailthumb-container img').imgpreload({
+
+                    each: function() {
+                        $(this).parents('.nailthumb-container').nailthumb({method:'crop',fitDirection:'top left',preload:false});
+
+                    },
+                    all: function() {
+                        $('.content').css({"visibility": "visible"});
+                    }
+                });
+                //jQuery('.nailthumb-container').nailthumb({method:'crop',fitDirection:'top left'});
+                
             });
         </script>
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
@@ -87,7 +99,7 @@ include 'phplib/config.inc.php';
                                     // has the same class as the viewable col to allow for the correct styles
                                     // to be applied. Meaning the pics are evenly spaced.
                                     if($imageLocations[$imageIndex] != "") {
-                                        printf("<div class=\"nailthumb-container tile\"><a href=\"viewer/index.php?index=%s\" ><img src=\"%s\" /> /></div>", $imageIndex,$imageLocations[$imageIndex]);
+                                        printf("<div class=\"nailthumb-container tile\"><a href=\"%s\" ><img src=\"%s\" /> /></div>", $imageLocations[$imageIndex],$imageLocations[$imageIndex]);
                                         $imageIndex++;
                                     } else {
 

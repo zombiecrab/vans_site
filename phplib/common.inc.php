@@ -16,19 +16,24 @@ function getImageLocationArrayOrig($searchLocation) {
     return ($filesFinal);
 }
 
-function getImageLocationArray($searchLocation) {
-	$prefix = sprintf('%s%s',$searchLocation,'/');
-	$filesFinal = array();
-	
-	if ($dh = opendir($searchLocation)) {
-		while (($file = readdir($dh)) !== false) {
-			if ($file == "." || $file == "..") continue;
-			
-			 $filesFinal[] = sprintf('%s%s',$prefix,$file);
-		}	   
-	}
-	
-	return $filesFinal;
+function getImageLocationArrayOrigArray($searchLocation) {
+    $fileArr = array();
+    $files = scandir($searchLocation);
+    $filesFinal = array();
+    
+    //remove the . and .. files
+    unset($files[0]);
+    unset($files[1]);
+    
+    $fileArr["pathPrefix"] = sprintf('%s%s',$searchLocation,'/');
+
+    foreach ($files as $file) {
+        $fileArr["filename"] = $file;
+        $fileArr["path"] = sprintf('%s%s',$fileArr["pathPrefix"],$fileArr["filename"]);
+        $filesFinal[$fileArr["filename"]] = $fileArr;
+    }
+    
+    return ($filesFinal);
 }
 
 function getImageDimesionsArray($path) {
